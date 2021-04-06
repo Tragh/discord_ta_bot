@@ -1,0 +1,29 @@
+[package]
+name = "discord_text_adventure"
+version = "0.1.0"
+authors = ["Tragh <mikemth@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+panic = 'abort'
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full" ,"io-util"] }
+dotenv = "0.15"
+serenity = { default-features = false, features = ["client", "gateway", "rustls_backend", "model", "cache"], version="0.10" }
+chrono = "0.4"
+shell-words = "1"
+#futures = "0.3"
+
+
+
+
+
+
+
+
+
+
+
